@@ -1,0 +1,55 @@
+grades = [[5, 3, 3, 5, 4], [2, 2, 2, 3], [4, 5, 5, 2], [4, 4, 3], [5, 5, 5, 4, 5]]
+students= {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
+grades_Aaron=(grades[0])
+print(grades_Aaron)
+quantity_grades_Aaron=len(grades[0])
+print(quantity_grades_Aaron)
+average_Aaron=sum(grades[0])/quantity_grades_Aaron
+print(average_Aaron)
+
+grades_Bilbo=(grades[1])
+print(grades_Bilbo)
+quantity_grades_Bilbo=len(grades[1])
+print(quantity_grades_Bilbo)
+average_Bilbo=sum(grades[1])/quantity_grades_Bilbo
+print(average_Bilbo)
+
+grades_Johnny=(grades[2])
+print(grades_Johnny)
+quantity_grades_Johnny=len(grades[2])
+print(quantity_grades_Johnny)
+average_Johnny=sum(grades[2])/quantity_grades_Johnny
+print(average_Johnny)
+
+grades_Khendrik=(grades[3])
+print(grades_Khendrik)
+quantity_grades_Khendrik=len(grades[3])
+print(quantity_grades_Khendrik)
+average_Khendrik=sum(grades[3])/quantity_grades_Khendrik
+print(average_Khendrik)
+
+grades_Steve=(grades[4])
+print(grades_Steve)
+quantity_grades_Steve=len(grades[4])
+print(quantity_grades_Steve)
+average_Steve=sum(grades[4])/quantity_grades_Steve
+print(average_Steve)
+
+students_list=list(students)
+new_students=sorted(students)
+Aaron=(new_students[0])
+Bilbo=(new_students[1])
+Johnny=(new_students[2])
+Khendrik=(new_students[3])
+Steve=(new_students[4])
+print(Aaron,Bilbo,Johnny,Khendrik,Steve)
+
+list_avarage=(average_Aaron,average_Bilbo,average_Johnny,average_Khendrik,average_Steve)
+print(list_avarage)
+
+student_GPA={}
+for i in range(len(new_students)):
+    student_GPA[new_students[i]]=list_avarage[i]
+
+set(student_GPA)
+print(student_GPA['Khendrik'])
